@@ -1,0 +1,5 @@
+permisos para setup.sql:
+
+chmod 644 setup.sql
+
+Así si lanza la imagen de mysql.
