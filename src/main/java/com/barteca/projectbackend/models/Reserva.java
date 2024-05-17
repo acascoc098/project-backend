@@ -1,4 +1,4 @@
-package com.api.projectbackend.models;
+package com.barteca.projectbackend.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

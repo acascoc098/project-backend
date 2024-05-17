@@ -1,4 +1,4 @@
-package com.api.projectbackend.models;
+package com.barteca.projectbackend.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,32 +11,22 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class Bar {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(length = 40, nullable = false)
     private String nombre;
 
-    @Column
-    private String provincia;
-    
-    @Column
-    private String ciudad;
-    
-    @Column(length = 30)
-    private String direccion;
-
-    @Column(length =  2)
-    private int calificacion;
-
-    @Column(length = 9, nullable = false)
-    private String telefono;
+    @Column(length = 75, nullable = false)
+    private String password;
 
     @Column(unique = true, length = 70, nullable = false)
     private String correo;
 
-
+    @Column(length = 9, nullable = false)
+    private String telefono;
+  
 }
