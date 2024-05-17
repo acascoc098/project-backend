@@ -1,36 +1,32 @@
-package com.barteca.projectbackend.models;
+package com.api.projectbackend.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
-public class Reserva {
-    
+public class Usuario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private Usuario usuario;
+    @Column(length = 40, nullable = false)
+    private String nombre;
 
-    @Column
-    private Bar bar;
+    @Column(length = 75, nullable = false)
+    private String password;
 
-    @Column
-    private int comensales;
+    @Column(unique = true, length = 70, nullable = false)
+    private String correo;
 
-    @Column
-    private String fecha;
-
-    @Column
-    private String hora;
-
+    @Column(length = 9, nullable = false)
+    private String telefono;
+  
 }

@@ -5,6 +5,7 @@ services:
     image: mysql
     restart: "no"
     environment:
+      MYSQL_ROOT_USERNAME: ${MYSQL_ROOT_USERNAME}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     networks:
       - mysql_network

@@ -1,4 +1,4 @@
-package com.barteca.projectbackend;
+package com.api.projectbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,10 +1,10 @@
-package com.barteca.projectbackend.controllers;
+package com.api.projectbackend.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.barteca.projectbackend.models.Reserva;
-import com.barteca.projectbackend.repos.ReservaRepo;
-import com.barteca.projectbackend.repos.UsuarioRepo;
+import com.api.projectbackend.models.Reserva;
+import com.api.projectbackend.repos.ReservaRepo;
+import com.api.projectbackend.repos.UsuarioRepo;
 
 import java.util.List;
 
