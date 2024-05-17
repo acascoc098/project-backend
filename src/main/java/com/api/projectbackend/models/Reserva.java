@@ -5,38 +5,32 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
-public class Bar {
-
+public class Reserva {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private String nombre;
+    @ManyToOne
+    private Usuario usuario;
 
     @Column
-    private String provincia;
-    
+    private Bar bar;
+
     @Column
-    private String ciudad;
-    
-    @Column(length = 30)
-    private String direccion;
+    private int comensales;
 
-    @Column(length =  2)
-    private int calificacion;
+    @Column
+    private String fecha;
 
-    @Column(length = 9, nullable = false)
-    private String telefono;
-
-    @Column(unique = true, length = 70, nullable = false)
-    private String correo;
-
+    @Column
+    private String hora;
 
 }
