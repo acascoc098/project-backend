@@ -1,6 +1,6 @@
-INSERT INTO `usuario`(`nombre`, `password`, `correo`, `telefono`) VALUES ('Juan Pérez', 'password123', 'juan.perez@example.com', '600123456');
-INSERT INTO `usuario`(`nombre`, `password`, `correo`, `telefono`) VALUES ('María García', 'securePass456', 'maria.garcia@example.com', '600654321');
-INSERT INTO `usuario`(`nombre`, `password`, `correo`, `telefono`) VALUES ('Carlos López', 'myPassword789', 'carlos.lopez@example.com', '600987654');
+INSERT INTO `usuario`(`nombre`, `username`, `password`, `correo`, `telefono`) VALUES ('Juan Pérez', 'juanpe', 'password123', 'juan.perez@example.com', '600123456');
+INSERT INTO `usuario`(`nombre`, `username`, `password`, `correo`, `telefono`) VALUES ('María García', 'mery', 'securePass456', 'maria.garcia@example.com', '600654321');
+INSERT INTO `usuario`(`nombre`, `username`, `password`, `correo`, `telefono`) VALUES ('Carlos López', 'carpe', 'myPassword789', 'carlos.lopez@example.com', '600987654');
 
 INSERT INTO `bar`(`nombre`, `provincia`, `ciudad`, `direccion`, `calificacion`, `telefono`, `correo`) VALUES ('Bar Central', 'Madrid', 'Madrid', 'Calle Mayor 1', 4, '912345678', 'barcentral@example.com');
 INSERT INTO `bar`(`nombre`, `provincia`, `ciudad`, `direccion`, `calificacion`, `telefono`, `correo`) VALUES ('La Taberna', 'Barcelona', 'Barcelona', 'Avenida Diagonal 23', 4, '934567890', 'lataberna@example.com');

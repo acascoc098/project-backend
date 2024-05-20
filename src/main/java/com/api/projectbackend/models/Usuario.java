@@ -19,6 +19,9 @@ public class Usuario {
 
     @Column(length = 40, nullable = false)
     private String nombre;
+    
+    @Column(length = 20, nullable = false)
+    private String username;
 
     @Column(length = 75, nullable = false)
     private String password;
