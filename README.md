@@ -156,3 +156,26 @@ Además, a la clase le indicamos que es un controlador y la primera parte de la 
 - @RequestMapping("/barteca")
 
 Estas peticiones se trabajan con los componentes de nuestro frontend.
+
+## Lista de rutas
+
+Para completar la aplicación, se definen una serie de end-points que serán completados en sucesivos sprints (un sprint en la metodología SCRUM de trabajo es una tarea que al completarla obtenemos un subproducto funcional).
+
+RUTA | VERBO | DATOS | COMENTARIOS
+-----|-------|-------|------------
+/usuario | GET | - | Devuelve los usuarios
+/usuario/x | GET | Parámetro x: ID de usuario | Devuelve el usuario con ID x
+/usuario/correo/{correo} | GET | Parámetro correo: correo de usuario | Devuelve el usuario con ese correo
+/usuario | POST | - | Añade el usuario
+/usuario/x | DELETE | Parámetro x: ID de usuario | Elimina el usuario con ID x
+/usuario/x | PUT | Parámetro x: ID de usuario | Modifica el usuario con ID x
+/bar | GET | - | Devuelve los bares
+/bar/x | GET | Parámetro x: ID de bar | Devuelve el bar con ID x
+/bar | POST | - | Añade el bar
+/bar/x | DELETE | Parámetro x: ID de bar| Elimina el bar con ID x
+/bar/x | PUT | Parámetro x: ID de bar | Modifica el bar con ID x
+/reserva | GET | - | Devuelve las reservas
+/reserva/x | GET | Parámetro x: ID de reserva | Devuelve el reserva con ID x
+/reserva | POST | - | Añade el reserva
+/reserva/x | DELETE | Parámetro x: ID de reserva| Elimina el reserva con ID x
+/reserva/x | PUT | Parámetro x: ID de reserva | Modifica el reserva con ID x
