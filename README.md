@@ -9,7 +9,7 @@
 #### Para acceder a spring en web
 
 - user = user
-- passxowd = *Using generated security password: ...
+- passxowd = *Using generated security password: ...*
 
 ### Repositorio del backend
 
@@ -54,6 +54,7 @@ public class Usuario {
 ```
 
 Y vemos lo siguiente:
+
 - @Id -> Indicamos que este atributo será el id y le aplicamos la opción de autoincrementar gracias a `@GeneratedValue(strategy = GenerationType.IDENTITY)`
 - @Column -> Indica que este atributo es una columna en la tabla
 
